@@ -1,0 +1,139 @@
+:root {
+  /* Tamaños de font */
+  --text: 12px;
+  --discounts: 16px;
+  --price: 18px;
+  --headers: 24px;
+
+  /* Paleta de colores */
+  --yellow: #eac926;
+  --white: #ffffff;
+  --lightgrey: #ebebeb;
+  --blue: #03264c;
+  --green: #39b54a;
+  --lightblue: #1259c3;
+  --darkgrey: #666666;
+  --black: #000000;
+}
+
+header {
+  background-color: var(--yellow);
+  background-size: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--text);
+  h2 {
+    font-size: var(--headers);
+  }
+  .precios {
+    font-size: var(--price);
+  }
+  .descuentos {
+    font-size: var(--discounts);
+  }
+  h3 {
+    font-size: var(--text);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+img {
+  width: 100%;
+}
+.logo {
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.barra-busqueda {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.compra-cuotas {
+  text-align: center;
+}
+
+.fa-solid.fa-magnifying-glass {
+  background-color: var(--lightgrey);
+  color: var(--black);
+  border-color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 18%; /* Hace que los bordes sean redondeados */
+  padding: 1%; /*afecta el tamaño total de un elemento*/
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.burger-menu {
+  background-color: var(--lightblue);
+  color: var(--white);
+  display: flex; /* Hace que el elemento sea un bloque */
+  margin: auto; /* Centra el bloque horizontalmente */
+  width: 7%; /*  ancho  */
+  border-radius: 10%; /* Hace que los bordes sean redondeados */
+  padding: 3%; /*afecta el tamaño total de un elemento*/
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.fa-solid.fa-credit-card {
+  color: var(--lightblue);
+  display: flex;
+  font-size: 2em;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.titulo-footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--discounts);
+  color: var(--darkgrey);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.parrafo-footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--text);
+  color: var(--darkgrey);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1px;
+}
+.Copyright {
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--text);
+  color: var(--darkgrey);
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.fa-solid.fa-gift {
+  color: var(--lightblue);
+  display: flex;
+  font-size: 2em;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.fa-solid.fa-user-shield {
+  color: var(--lightblue);
+  display: flex;
+  font-size: 2em;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
