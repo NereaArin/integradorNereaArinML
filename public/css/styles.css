@@ -137,3 +137,13 @@ img {
   align-items: center;
   margin-top: 30px;
 }
+
+.credit-card {
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.privacy {
+  padding-right: 65px;
+  padding-left: 65px;
+}
