@@ -25,15 +25,18 @@ header {
 }
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--lightgrey);
   font-size: var(--text);
   h2 {
     font-size: var(--headers);
   }
   .precios {
-    font-size: var(--price);
+    font-size: var(--text);
+    font-weight: 400;
   }
   .descuentos {
-    font-size: var(--discounts);
+    font-size: var(--text);
+    font-weight: 300;
   }
   h3 {
     font-size: var(--text);
@@ -51,13 +54,19 @@ img {
   margin-left: 5%;
   margin-top: 5%;
 }
-.barra-busqueda {
+.search-bar-busqueda {
   margin-left: 5%;
   margin-top: 5%;
 }
 
-.compra-cuotas {
+.list-one {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.installments {
   text-align: center;
+  margin-top: 10px;
 }
 
 .fa-solid.fa-magnifying-glass {
@@ -65,8 +74,8 @@ img {
   color: var(--black);
   border-color: var(--black);
   border: 1px solid var(--black);
-  border-radius: 18%; /* Hace que los bordes sean redondeados */
-  padding: 1%; /*afecta el tamaño total de un elemento*/
+  border-radius: 3px; /* Hace que los bordes sean redondeados */
+  padding: 2px; /*afecta el tamaño total de un elemento*/
   font-weight: bold;
   margin-top: 2px;
 }
@@ -76,12 +85,15 @@ img {
   color: var(--white);
   display: flex; /* Hace que el elemento sea un bloque */
   margin: auto; /* Centra el bloque horizontalmente */
-  width: 7%; /*  ancho  */
-  border-radius: 10%; /* Hace que los bordes sean redondeados */
-  padding: 3%; /*afecta el tamaño total de un elemento*/
+  width: 10px; /*  ancho  */
+  height: 10px;
+  border-radius: 5px; /* Hace que los bordes sean redondeados */
+  padding: 18px; /*afecta el tamaño total de un elemento*/
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .fa-solid.fa-credit-card {
@@ -93,7 +105,7 @@ img {
   align-items: center;
   margin-top: 40px;
 }
-.titulo-footer {
+.title-footer {
   font-family: 'Roboto', sans-serif;
   font-size: var(--discounts);
   color: var(--darkgrey);
@@ -101,7 +113,7 @@ img {
   justify-content: center;
   text-align: center;
 }
-.parrafo-footer {
+.paragraph-footer {
   font-family: 'Roboto', sans-serif;
   font-size: var(--text);
   color: var(--darkgrey);
@@ -116,13 +128,13 @@ img {
   color: var(--darkgrey);
   margin-bottom: 20px;
   margin-left: 5%;
+  margin-top: 50px;
 }
 
 .fa-solid.fa-gift {
   color: var(--lightblue);
   display: flex;
   font-size: 2em;
-  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -132,18 +144,98 @@ img {
   color: var(--lightblue);
   display: flex;
   font-size: 2em;
-  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
-.credit-card {
+.footer-icons {
   padding-right: 65px;
   padding-left: 65px;
 }
+main {
+  width: 90%;
+  margin: auto;
+}
+article {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--white);
+  width: 90%;
+  margin: auto;
+}
 
-.privacy {
-  padding-right: 65px;
-  padding-left: 65px;
+.banner {
+  display: block;
+}
+
+.content-box {
+  border-top: 1px solid #ebebeb;
+  margin: 15px;
+}
+.content-box i {
+  border: 1px solid#42c828;
+  border-radius: 30px;
+  padding: 10px 8px;
+  margin-top: 10px;
+}
+
+.descuentos {
+  color: #42c828;
+  font-size: var(--text);
+  padding-bottom: 10px;
+}
+
+.content-box h3 {
+  margin-top: 15px;
+  padding-bottom: 10px;
+  color: var(--darkgrey);
+  font-weight: 350;
+}
+
+.titulo-seccion {
+  margin-bottom: 10px;
+  color: var(--darkgrey);
+  font-weight: 500;
+  font-size: var(--discounts);
+}
+
+h3 {
+  display: none;
+}
+
+.list-one {
+  display: none;
+}
+
+.list-two {
+  display: none;
+}
+
+/* tablet*/
+
+@media (min-width: 361px) {
+  .content-box h3 {
+    display: block;
+  }
+
+  article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .list-one {
+    display: block;
+  }
+
+  .list-two {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 769px) {
 }
