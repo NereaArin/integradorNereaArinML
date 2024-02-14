@@ -15,7 +15,9 @@
   --darkgrey: #666666;
   --black: #000000;
 }
-
+* {
+  box-sizing: border-box;
+}
 header {
   background-color: var(--yellow);
   background-size: auto;
@@ -46,14 +48,19 @@ body {
     padding: 0;
   }
 }
+
+.main-header {
+  background-color: var(--yellow);
+}
 img {
   width: 100%;
 }
 .logo {
-  width: 50%;
-  margin-left: 5%;
-  margin-top: 5%;
+  width: 200px;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
+
 .search-bar-busqueda {
   margin-left: 5%;
   margin-top: 5%;
@@ -63,12 +70,16 @@ img {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
-.installments {
-  text-align: center;
-  margin-top: 10px;
+.list-two i {
+  padding-left: 2px;
 }
 
+.installments {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
 .fa-solid.fa-magnifying-glass {
   background-color: var(--lightgrey);
   color: var(--black);
@@ -212,6 +223,24 @@ h3 {
   display: none;
 }
 
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+.main-navbar {
+  margin-bottom: 10px;
+}
+
 /* tablet*/
 
 @media (min-width: 361px) {
@@ -237,5 +266,54 @@ h3 {
 
 /* desktop */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .main-header-top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .installments {
+    max-width: 350px;
+    text-align: right;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 250px;
+  }
+  .main-header-top-bar,
+  .main-navbar {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .installments {
+    max-width: none;
+    font-size: 20px;
+    font-weight: 400px;
+    margin: 0;
+  }
+  .main-header-top-bar {
+    align-items: center;
+  }
+  .main-navbar {
+    margin-top: 50px;
+  }
+  .main-navbar li {
+    margin: 0 10px;
+  }
+  .main-navbar a {
+    font-size: 19px;
+  }
 }
