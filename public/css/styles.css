@@ -29,6 +29,7 @@ header {
 .main-header {
   background-color: var(--yellow);
   top: 0;
+  padding: 5px;
 }
 .main-header-top-bar {
   display: flex;
@@ -617,13 +618,18 @@ footer {
   height: 20px;
 }
 .pass input {
-  font-size: 16px;
+  border: none;
+  display: flex;
   border-radius: 10px;
-  border-style: none;
-  margin-bottom: 20px;
-  padding: 5px;
-  width: 250px;
+  width: 70vw;
+  padding: 10px;
+  max-width: 500px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  height: 30px;
+  position: relative;
 }
+
 .tapToRegister {
   padding: 10px;
   background-color: var(--lightblue);
@@ -634,6 +640,7 @@ footer {
   border-radius: 10px;
   width: 250px;
   cursor: pointer;
+  margin-top: 30px;
 }
 .tapToRegister:hover {
   background-color: #0022aa;
@@ -664,14 +671,19 @@ form {
 }
 
 .user input {
-  font-size: 16px;
+  border: none;
+  display: flex;
   border-radius: 10px;
-  border-style: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-  width: 250px;
+  width: 70vw;
+  padding: 10px;
+  max-width: 500px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
 }
+
 .contraseña {
   font-size: 16px;
   border-radius: 10px;
@@ -695,8 +707,17 @@ div {
   width: 250px;
   cursor: pointer;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .tapToLogin:hover {
   background-color: #0022aa;
+}
+.bgWhite-login {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
